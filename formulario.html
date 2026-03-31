@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body style="background-color: black;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow p-4 mx-auto" style="max-width: 550px;">
+                 <h1>Formulario de Registro</h1>
+                    <form action="form.html" method="post">
+    
+                            <!--Nombre-->
+                            <div class="mb-4">
+                            <label for="txtnombre" class="form-label">Nombre completo:</label>
+                            <input type="text" class="form-control" name="txtnombre" placeholder="Ej. Jay Park" required>
+                            </div>
+
+                            <!--Numero de telefono-->
+                            <div class="mb-3">
+                            <label for="telefono" class="form-label">Numero de telefono:</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9][10]" 
+                                placeholder="Ej. 87804202002" required>
+                            </div>
+
+                            <!--Correo electronico-->
+                            <div class="mb-3">
+                            <label for="txtemail" class="form-label">Direccion de correo:</label>
+                                <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" name="txtemail" placeholder="Ejemplo@correo.com" required>
+                            </div>
+
+                            <!--Contraseña-->
+                            <div class="mb-3">
+                            <label for="txtpass" class="form-label">Ingrese una constraseña:</label>
+                            <input type="password" class="form-control" id="txtpass" name="txtpass" 
+                                placeholder="Minimo 8 caracteres" required>
+                            </div>
+
+                            <!--Confirmar contraseña-->
+                            <div class="mb-3">
+                            <label for="txtpass" class="form-label">Confirmas constraseña:</label>
+                                 <input type="password" class="form-control" id="confrimar" name="confrimar" placeholder="Repite tu constraseña" required>
+                            </div>
+
+                            <!--Fecha de nacimiento-->
+                            <label for="txtfecha" class="form-label">Fecha de nacimiento:</label>
+                            <input type="date" class="form-control" id="fecha" name="txtfecha" required>
+                            <br>
+
+                            <!--Genero-->
+                            <p>Genero</p>
+                            <div class="form-check">
+                            <label for="mujer" class="form-check-label">Mujer</label>
+                            <input type="radio" class="form-check-input" id="mujer" name="genero" value="mujer" required>
+                            </div>
+
+                            <div class="form-check">
+                            <label for="hombre" class="form-check-label">Hombre</label>
+                            <input type="radio" class="form-check-input" id="hombre" name="genero" value="hombre" required>
+                            </div>
+
+                            <div class="form-check">
+                            <label for="otro" class="form-check-label">Otro</label>
+                            <input type="radio" class="form-check-input" id="otro" name="genero" value="otro" required>
+                            </div>
+
+
+                            <!--Terminos-->
+                            <div class="form-check mt-3 mb-3">
+                            <label for="terminos" class="form-check-label">Acepto los termines y condiciones</label>
+                            <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required>
+                            </div>
+
+                            <!--Button-->
+                            <input type="submit" class="btn btn-primary" value="Registrar">
+                            </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
